@@ -1,10 +1,11 @@
-const exxpress = require("express");
+const express = require("express");
 const cors = require("cors");
 
-const app = exxpress();
+const app = express();
 
 app.use(cors());
-app.use(exxpress.json());
+app.use(express.json());
+
 
 app.get("/", (req, res) => {
     res.json({ message: "Welcome to contact book application."});
